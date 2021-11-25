@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<div id="pay">
+
+</div>
+<script src="payments_2005_to_2010.js"></script>
+<script>
+
+
+var payments = 0;
+function add(item){
+	payments += Number(item[9]);
+}
+
+chicago.data.forEach(add);
+console.log(payments);
+
+const element = document.getElementById("pay");
+element.innerHTML = '<h3> This is all the payments city of chicago has made in 5 years </h3>' + '<h1>' + payments + '</h1>';
+
+</script>
+</html>
