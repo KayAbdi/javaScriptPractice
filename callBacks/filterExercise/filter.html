@@ -10,8 +10,10 @@ const employees = [
 ];
 
 function isBigEnough(element) {
-  let comparison = element.salary <= 500000;
-  return comparison;  	
+  // let comparison = element.salary <= 500000;
+  // return comparison; above is the recommended way. 
+  let salary = element.salary;
+  if (salary <= 500000)	return true
 }
 
 const filtered = employees.filter(isBigEnough);
