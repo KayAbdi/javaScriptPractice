@@ -15,9 +15,8 @@ let obj;
 
 function graffitiReports(zip) {
 	matching = chicago.data.filter(function(report){
-		// ---------------------------
-		//		YOUR CODE
-		// ---------------------------
+		realzip = report[16]===zip;
+		return realzip;
 	});
 
 	obj = {};
